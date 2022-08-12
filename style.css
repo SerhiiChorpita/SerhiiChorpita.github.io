@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: default;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -432,6 +433,37 @@ textarea {
   border-top: 49px solid transparent;
   border-left: 208px solid rgb(73, 71, 73);
 }
+.main-block__left__contact {
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  align-items: flex-start;
+  position: relative;
+  top: 3%;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  padding-left: 5%;
+  background-color: rgb(73, 71, 73);
+}
+.main-block__left__contact__header {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 20%;
+}
+.main-block__left__contact__header .line {
+  width: 5%;
+  height: 100%;
+  background-color: rgb(155, 161, 178);
+}
+.main-block__left__contact__header .header-name {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .main-block__right {
   display: flex;
   flex-flow: column;
@@ -442,7 +474,7 @@ textarea {
   background-color: rgb(232, 230, 233);
   padding-top: 9%;
 }
-.main-block__right__box1, .main-block__right__box2 {
+.main-block__right__box1, .main-block__right__box2, .main-block__right__box3 {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -451,7 +483,7 @@ textarea {
   height: -moz-max-content;
   height: max-content;
 }
-.main-block__right__box1__header, .main-block__right__box2__header {
+.main-block__right__box1__header, .main-block__right__box2__header, .main-block__right__box3__header {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -459,18 +491,18 @@ textarea {
   height: 35px;
   border-bottom: 1px solid rgb(155, 161, 178);
 }
-.main-block__right__box2 {
+.main-block__right__box2, .main-block__right__box3 {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
-.main-block__right__box2__body {
+.main-block__right__box2__body, .main-block__right__box3__body {
   display: flex;
   flex-flow: row nowrap;
   width: 95%;
   height: 100%;
 }
-.main-block__right__box2__body__text-area {
+.main-block__right__box2__body__text-area, .main-block__right__box3__body__text-area {
   padding: 7px 0 7px 0;
   display: block;
   width: 90%;
@@ -481,6 +513,9 @@ textarea {
   font-family: FiraSansRegular;
   font-size: 14px;
   color: rgb(73, 71, 73);
+}
+.main-block__right__box3__body__text-area {
+  padding: 0;
 }
 .main-block__right__text-area-about {
   padding: 7px 0 7px 18px;
@@ -496,7 +531,8 @@ textarea {
 }
 
 .img-roud1,
-.img-roud2 {
+.img-roud2,
+.img-roud3 {
   display: block;
   width: 25px;
   height: 25px;
@@ -511,6 +547,10 @@ textarea {
 
 .img-roud2 {
   background-image: url(images/icons/suitcase.svg);
+}
+
+.img-roud3 {
+  background-image: url(images/icons/graduation-cap.svg);
 }
 
 .line {
@@ -544,6 +584,54 @@ textarea {
   margin-bottom: 20px;
 }
 
+a {
+  color: rgb(48, 130, 188);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0 3px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+a:hover {
+  box-shadow: 0px 0px 11px 2px white;
+  color: orange;
+}
+
+.flex-r {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-image: url(images/contact/telegram-alt.svg);
+}
+
+.img2 {
+  background-image: url(images/contact/mobile-android.svg);
+}
+
+.img3 {
+  background-image: url(images/contact/envelope-alt.svg);
+}
+
+.img4 {
+  background-image: url(images/contact/github.svg);
+}
+
+.img5 {
+  background-image: url(images/contact/linkedin.svg);
+}
+
 .conduct-line {
   display: flex;
   justify-content: start;
@@ -566,4 +654,24 @@ textarea {
   position: relative;
   top: 0;
   right: 4.3px;
+}
+
+.tech {
+  font-family: FiraSansRegular;
+  font-size: 14px;
+}
+
+.desc {
+  font-family: FiraSansLight;
+  font-size: 11.5px;
+}
+
+.my-education__academy {
+  font-family: BreeSerif;
+}
+.my-education__profession {
+  font-family: FiraSansRegular;
+}
+.my-education__date {
+  font-family: FiraSansLight;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+@import 'base/base';
+@import 'base/mixins';
+@import 'base/variables';
+
+.main-block{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: c;
+    width: 595px;
+    height: 842px;
+    margin: 0 auto;
+    &__left{
+        display: flex;
+        flex-flow: column;
+        width: 35%;
+        height: 100%;
+        background-color: $gray;
+    }
+    &__right{
+        display: flex;
+        flex-flow: column;
+        width: 65%;
+        height: 100%;
+        background-color: $lightGray;
+    }
+}

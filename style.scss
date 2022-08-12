@@ -1,27 +1,205 @@
-@import 'base/base';
-@import 'base/mixins';
-@import 'base/variables';
+@import "base/base";
+@import "base/mixins";
+@import "base/variables";
+@import "base/fonts";
 
-.main-block{
+.main-block {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 595px;
+  height: 842px;
+  margin: 0 auto;
+  &__left {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: c;
-    width: 595px;
-    height: 842px;
-    margin: 0 auto;
-    &__left{
-        display: flex;
-        flex-flow: column;
-        width: 35%;
-        height: 100%;
-        background-color: $gray;
+    flex-flow: column;
+    width: 35%;
+    height: 100%;
+    background-color: $gray;
+    &__represent {
+      display: flex;
+      flex-flow: column;
+      justify-content: start;
+      border-radius: 2px;
+      align-items: center;
+      width: 100%;
+      height: 40%;
+      background-color: $blue;
+      position: relative;
+      top: 3%;
+      left: 12%;
+      padding-top: 7%;
+      &__avatar {
+        display: block;
+        width: 70%;
+        height: 45%;
+        border-radius: 50%;
+        border: 3px solid $lightGray2;
+        background-image: url(images/Serhii_Chorpita.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: 125%;
+        transition: box-shadow 0.5s;
+        &:hover {
+          box-shadow: 0 0 7px 2px white;
+        }
     }
-    &__right{
+    &__name,
+    &__proffesion,
+    &__address {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $lightGray1;
+      width: 100%;
+      height: 10%;
+      text-align: center;
+      font-family: BreeSerif;
+      cursor: default;
+    }
+    &__name {
+      height: 20%;
+        font-size: 30px;
+    }
+    &__proffesion {
+        font-size: 16px;
+        font-family: FiraSansRegular;
+        }
+    &__address {
         display: flex;
         flex-flow: column;
-        width: 65%;
+        font-size: 12px;
+        font-family: FiraSansLight;
+    }
+    &__cut{
+        display: block;
+        width: 100%;
+        height: 3%;
+        border-top: 49px solid transparent;
+        border-left: 208px solid $gray;
+    }
+    }
+  }
+  &__right {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    background-color: $lightGray1;
+    padding-top: 9%;
+    &__box1,
+    &__box2{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 85%;
+        height: max-content;
+        &__header{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 95%;
+            height: 35px;
+            border-bottom: 1px solid $lightGray2;
+        }
+    }
+        &__box2 {
+            height: max-content;
+            &__body{
+                display: flex;
+                flex-flow: row nowrap;
+                width: 95%;
+                height: 100%;
+                &__text-area{
+                    padding: 7px 0 7px 0;
+                        display: block;
+                        width: 90%;
+                        height: max-content;
+                        text-align: justify;
+                        font-family: FiraSansRegular;
+                        font-size: 14px;
+                        color: $gray;
+                }
+            }
+        }
+    &__text-area-about{
+        padding: 7px 0 7px 18px;
+        display: block;
+        width: 90%;
+        height: max-content;
+        text-align: justify;
+        font-family: FiraSansRegular;
+        font-size: 14px;
+        color: $gray;
+    }
+  }
+}
+.img-roud1,
+.img-roud2 {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: $blue;
+    background-image: url(images/icons/edit.svg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+.img-roud2{
+    background-image: url(images/icons/suitcase.svg);
+}
+
+.line {
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: $blue;
+    margin-right: 3px;
+}
+.header-name{
+    display: block;
+    font-family: BreeSerif;
+    color: $blue;
+    font-size: 16px;
+}
+.pt3 {
+    padding-top: 3px;
+}
+.pb3 {
+    padding-bottom: 3px;
+}
+.mt25 {
+    margin-top: 20px;
+}
+.mb25 {
+    margin-bottom: 20px;
+}
+.conduct-line{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width:9%;
+    height: 100%;
+    
+    &__line{
+        display: block;
+        width: 50%;
         height: 100%;
-        background-color: $lightGray;
+        border-right: 2px solid $lightGray2;
+    }
+    &__circle{
+        display: block;
+        width: 7px;
+        height: 7px;
+        background-color: $lightGray2;
+        border-radius: 50%;
+        position: relative;
+        top: 0;
+        right: 4.3px;
     }
 }

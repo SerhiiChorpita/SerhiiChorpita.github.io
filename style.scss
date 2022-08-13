@@ -78,6 +78,9 @@
         height: 3%;
         border-top: 49px solid transparent;
         border-left: 208px solid $gray;
+        position: relative;
+        top: 1px;
+        right: 18px;
       }
     }
     &__contact,

@@ -511,10 +511,13 @@ textarea {
 }
 .main-block__left__represent__cut {
   display: block;
-  width: 100%;
+  width: 101%;
   height: 3%;
   border-top: 49px solid transparent;
   border-left: 208px solid rgb(73, 71, 73);
+  position: relative;
+  top: 1px;
+  right: 18px;
 }
 .main-block__left__contact, .main-block__left__skills-block, .main-block__left__langueges {
   display: flex;

@@ -465,8 +465,8 @@ textarea {
   height: 40%;
   background-color: rgb(48, 130, 188);
   position: relative;
-  top: 3%;
-  left: 12%;
+  top: 2%;
+  left: 9%;
   padding-top: 7%;
 }
 .main-block__left__represent__avatar {
@@ -522,12 +522,12 @@ textarea {
   justify-content: start;
   align-items: flex-start;
   position: relative;
-  top: 3%;
+  top: 2%;
   left: 0;
   display: flex;
   width: 100%;
   height: 16%;
-  padding-left: 5%;
+  padding-left: 9%;
   background-color: rgb(73, 71, 73);
 }
 .main-block__left__contact__header, .main-block__left__skills-block__header, .main-block__left__langueges__header {
@@ -551,7 +551,7 @@ textarea {
 .main-block__left .skills-name {
   color: rgb(155, 161, 178);
   font-family: FiraSansLight;
-  font-size: 14px;
+  font-size: 13px;
 }
 .main-block__left__skills-block {
   height: 27%;
@@ -625,13 +625,13 @@ textarea {
   width: 65%;
   height: 100%;
   background-color: rgb(232, 230, 233);
-  padding-top: 9%;
+  padding-top: 5%;
 }
 .main-block__right__box1, .main-block__right__box2, .main-block__right__box3 {
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 85%;
+  width: 90%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -723,6 +723,10 @@ textarea {
 
 .pl3 {
   padding-left: 3px;
+}
+
+.pl13 {
+  padding-left: 13px;
 }
 
 .pt3 {

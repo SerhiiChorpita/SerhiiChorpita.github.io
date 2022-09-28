@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   width: 810px;
-  height: 1144px;
+  height: 1145px;
   margin: 0 auto;
   &__left {
     display: flex;
@@ -76,10 +76,10 @@
         display: block;
         width: 100%;
         height: 3%;
-        border-top: 49px solid transparent;
+        border-top: 46px solid transparent;
         border-left: 280px solid rgb(73, 71, 73);
         position: relative;
-        top: 16px;
+        top: 20px;
         right: 24px;
       }
     }
@@ -199,7 +199,7 @@
     width: 65%;
     height: 100%;
     background-color: $lightGray1;
-    padding-top: 4%;
+    padding: 2% 0;
     &__box1,
     &__box2,
     &__box3 {
@@ -234,6 +234,11 @@
           font-family: FiraSansRegular;
           font-size: 18px;
           color: $gray;
+          .logos {
+            display: block;
+            width: fit-content;
+            height: fit-content;
+          }
         }
       }
     }

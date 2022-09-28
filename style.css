@@ -444,8 +444,8 @@ textarea {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  width: 595px;
-  height: 842px;
+  width: 743px;
+  height: 1054px;
   margin: 0 auto;
 }
 .main-block__left {
@@ -500,24 +500,24 @@ textarea {
   font-size: 30px;
 }
 .main-block__left__represent__proffesion {
-  font-size: 16px;
+  font-size: 20px;
   font-family: FiraSansRegular;
 }
 .main-block__left__represent__address {
   display: flex;
   flex-flow: column;
-  font-size: 12px;
+  font-size: 16px;
   font-family: FiraSansLight;
 }
 .main-block__left__represent__cut {
   display: block;
-  width: 101%;
+  width: 100%;
   height: 3%;
   border-top: 49px solid transparent;
-  border-left: 208px solid rgb(73, 71, 73);
+  border-left: 259px solid rgb(73, 71, 73);
   position: relative;
-  top: 1px;
-  right: 18px;
+  top: 12px;
+  right: 24px;
 }
 .main-block__left__contact, .main-block__left__skills-block, .main-block__left__langueges {
   display: flex;
@@ -532,6 +532,7 @@ textarea {
   height: 16%;
   padding-left: 9%;
   background-color: rgb(73, 71, 73);
+  margin-top: 20px;
 }
 .main-block__left__contact__header, .main-block__left__skills-block__header, .main-block__left__langueges__header {
   display: flex;
@@ -554,10 +555,10 @@ textarea {
 .main-block__left .skills-name {
   color: rgb(155, 161, 178);
   font-family: FiraSansLight;
-  font-size: 13px;
+  font-size: 16px;
 }
 .main-block__left__skills-block {
-  height: 27%;
+  height: 25%;
 }
 .main-block__left__langueges {
   height: 11%;
@@ -580,8 +581,10 @@ textarea {
   background-image: url(images/icons/Skills-Icons.webp);
   background-repeat: no-repeat;
   background-size: 1500%;
-  background-position: 14% 8%;
   margin-right: 3px;
+}
+.main-block__left .skills-img1 {
+  background-position: 14% 8%;
 }
 .main-block__left .skills-img2 {
   background-position: 13% 57%;
@@ -623,12 +626,12 @@ textarea {
 .main-block__right {
   display: flex;
   flex-flow: column;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
   width: 65%;
   height: 100%;
   background-color: rgb(232, 230, 233);
-  padding-top: 5%;
+  padding-top: 4%;
 }
 .main-block__right__box1, .main-block__right__box2, .main-block__right__box3 {
   display: flex;
@@ -667,7 +670,7 @@ textarea {
   height: max-content;
   text-align: justify;
   font-family: FiraSansRegular;
-  font-size: 14px;
+  font-size: 18px;
   color: rgb(73, 71, 73);
 }
 .main-block__right__box3__body__text-area {
@@ -682,7 +685,7 @@ textarea {
   height: max-content;
   text-align: justify;
   font-family: FiraSansRegular;
-  font-size: 14px;
+  font-size: 18px;
   color: rgb(73, 71, 73);
 }
 
@@ -721,7 +724,7 @@ textarea {
   display: block;
   font-family: BreeSerif;
   color: rgb(48, 130, 188);
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .pl3 {
@@ -831,12 +834,12 @@ a:hover {
 
 .tech {
   font-family: FiraSansRegular;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .desc {
   font-family: FiraSansLight;
-  font-size: 11.5px;
+  font-size: 15.5px;
 }
 
 .my-education__academy {

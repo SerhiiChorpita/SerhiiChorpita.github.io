@@ -444,8 +444,8 @@ textarea {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  width: 743px;
-  height: 1054px;
+  width: 810px;
+  height: 1122px;
   margin: 0 auto;
 }
 .main-block__left {
@@ -514,9 +514,9 @@ textarea {
   width: 100%;
   height: 3%;
   border-top: 49px solid transparent;
-  border-left: 259px solid rgb(73, 71, 73);
+  border-left: 280px solid rgb(73, 71, 73);
   position: relative;
-  top: 12px;
+  top: 16px;
   right: 24px;
 }
 .main-block__left__contact, .main-block__left__skills-block, .main-block__left__langueges {
@@ -685,7 +685,7 @@ textarea {
   height: max-content;
   text-align: justify;
   font-family: FiraSansRegular;
-  font-size: 18px;
+  font-size: 20px;
   color: rgb(73, 71, 73);
 }
 

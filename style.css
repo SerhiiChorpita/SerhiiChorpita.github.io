@@ -477,8 +477,8 @@ textarea {
   border: 3px solid rgb(155, 161, 178);
   background-image: url(images/Serhii_Chorpita.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: 125%;
+  background-position: 48% 21%;
+  background-size: 170%;
   transition: box-shadow 0.5s;
 }
 .main-block__left__represent__avatar:hover {

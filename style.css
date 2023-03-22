@@ -427,18 +427,15 @@ textarea {
   padding: 0.2em 0;
 }
 
-@font-face {
-  font-family: BreeSerif;
-  src: url(../fonts/BreeSerif-Regular.ttf);
+* {
+  font-family: serif;
+  transition: all 0.3s;
 }
-@font-face {
-  font-family: FiraSansRegular;
-  src: url(../fonts/FiraSans-Regular.ttf);
+
+body {
+  background-color: rgba(206, 204, 119, 0.034);
 }
-@font-face {
-  font-family: FiraSansLight;
-  src: url(../fonts/FiraSans-Light.ttf);
-}
+
 .main-block {
   display: flex;
   flex-flow: row nowrap;
@@ -458,31 +455,16 @@ textarea {
 .main-block__left__represent {
   display: flex;
   flex-flow: column;
-  justify-content: start;
+  justify-content: space-evenly;
   border-radius: 2px;
   align-items: center;
   width: 100%;
-  height: 40%;
+  height: 20%;
   background-color: rgb(48, 130, 188);
   position: relative;
   top: 2%;
   left: 9%;
-  padding-top: 7%;
-}
-.main-block__left__represent__avatar {
-  display: block;
-  width: 70%;
-  height: 45%;
-  border-radius: 50%;
-  border: 3px solid rgb(155, 161, 178);
-  background-image: url(images/Serhii_Chorpita.jpg);
-  background-repeat: no-repeat;
-  background-position: 48% 21%;
-  background-size: 170%;
-  transition: box-shadow 0.5s;
-}
-.main-block__left__represent__avatar:hover {
-  box-shadow: 0 0 7px 2px white;
+  padding-top: 20%;
 }
 .main-block__left__represent__name, .main-block__left__represent__proffesion, .main-block__left__represent__address {
   display: flex;
@@ -490,33 +472,30 @@ textarea {
   align-items: center;
   color: rgb(232, 230, 233);
   width: 100%;
-  height: 10%;
+  height: 20%;
   text-align: center;
-  font-family: BreeSerif;
   cursor: default;
 }
 .main-block__left__represent__name {
-  height: 20%;
-  font-size: 30px;
+  font-size: 26px;
 }
 .main-block__left__represent__proffesion {
   font-size: 20px;
-  font-family: FiraSansRegular;
 }
 .main-block__left__represent__address {
-  display: flex;
-  flex-flow: column;
-  font-size: 16px;
-  font-family: FiraSansLight;
+  font-size: 18px;
+}
+.main-block__left__represent__address:hover {
+  font-size: 19px;
 }
 .main-block__left__represent__cut {
   display: block;
-  width: 100%;
-  height: 3%;
-  border-top: 46px solid transparent;
-  border-left: 280px solid rgb(73, 71, 73);
+  width: 85%;
+  height: 60%;
+  border-top: 23px solid transparent;
+  border-left: 282px solid rgb(73, 71, 73);
   position: relative;
-  top: 20px;
+  top: 43px;
   right: 24px;
 }
 .main-block__left__contact, .main-block__left__skills-block, .main-block__left__langueges {
@@ -554,7 +533,6 @@ textarea {
 .main-block__left .contacts-section-link,
 .main-block__left .skills-name {
   color: rgb(155, 161, 178);
-  font-family: FiraSansLight;
   font-size: 16px;
 }
 .main-block__left__skills-block {
@@ -638,7 +616,6 @@ textarea {
   flex-flow: column;
   align-items: center;
   width: 90%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -651,7 +628,6 @@ textarea {
   border-bottom: 1px solid rgb(155, 161, 178);
 }
 .main-block__right__box2, .main-block__right__box3 {
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -665,20 +641,16 @@ textarea {
   padding: 7px 0 7px 0;
   display: block;
   width: 90%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   text-align: justify;
-  font-family: FiraSansRegular;
   font-size: 18px;
   color: rgb(73, 71, 73);
 }
 .main-block__right__box2__body__text-area .logos, .main-block__right__box3__body__text-area .logos {
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -689,13 +661,14 @@ textarea {
   padding: 7px 0 7px 18px;
   display: block;
   width: 90%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   text-align: justify;
-  font-family: FiraSansRegular;
   font-size: 20px;
   color: rgb(73, 71, 73);
+}
+.main-block:hover body {
+  background-color: lightgray;
 }
 
 .img-roud1,
@@ -731,7 +704,6 @@ textarea {
 
 .header-name {
   display: block;
-  font-family: BreeSerif;
   color: rgb(48, 130, 188);
   font-size: 20px;
 }
@@ -842,21 +814,9 @@ a:hover {
 }
 
 .tech {
-  font-family: FiraSansRegular;
   font-size: 18px;
 }
 
 .desc {
-  font-family: FiraSansLight;
   font-size: 15.5px;
-}
-
-.my-education__academy {
-  font-family: BreeSerif;
-}
-.my-education__profession {
-  font-family: FiraSansRegular;
-}
-.my-education__date {
-  font-family: FiraSansLight;
 }/*# sourceMappingURL=style.css.map */

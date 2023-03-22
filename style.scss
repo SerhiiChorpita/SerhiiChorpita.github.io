@@ -1,7 +1,15 @@
 @import "base/base";
 @import "base/mixins";
 @import "base/variables";
-@import "base/fonts";
+
+* {
+  font-family: serif;
+  transition: all 0.3s;
+}
+
+body {
+  background-color: rgba(206, 204, 119, 0.034);
+}
 
 .main-block {
   display: flex;
@@ -20,31 +28,30 @@
     &__represent {
       display: flex;
       flex-flow: column;
-      justify-content: start;
+      justify-content: space-evenly;
       border-radius: 2px;
       align-items: center;
       width: 100%;
-      height: 40%;
+      height: 20%;
       background-color: $blue;
       position: relative;
       top: 2%;
       left: 9%;
-      padding-top: 7%;
-      &__avatar {
-        display: block;
-        width: 70%;
-        height: 45%;
-        border-radius: 50%;
-        border: 3px solid $lightGray2;
-        background-image: url(images/Serhii_Chorpita.jpg);
-        background-repeat: no-repeat;
-        background-position: 48% 21%;
-        background-size: 170%;
-        transition: box-shadow 0.5s;
-        &:hover {
-          box-shadow: 0 0 7px 2px white;
-        }
-      }
+      padding-top: 20%;
+      // &__avatar {
+      //   display: block;
+      //   width: 70%;
+      //   height: 45%;
+      //   border-radius: 50%;
+      //   border: 3px solid $lightGray2;
+      //   background-image: url(images/Serhii_Chorpita.jpg);
+      //   background-repeat: no-repeat;
+      //   background-position: 48% 21%;
+      //   background-size: 170%;
+      //   transition: box-shadow 0.5s;
+      //   &:hover {
+      //     box-shadow: 0 0 7px 2px white;
+      //   }
       &__name,
       &__proffesion,
       &__address {
@@ -53,36 +60,34 @@
         align-items: center;
         color: $lightGray1;
         width: 100%;
-        height: 10%;
+        height: 20%;
         text-align: center;
-        font-family: BreeSerif;
         cursor: default;
       }
       &__name {
-        height: 20%;
-        font-size: 30px;
+        font-size: 26px;
       }
       &__proffesion {
         font-size: 20px;
-        font-family: FiraSansRegular;
       }
       &__address {
-        display: flex;
-        flex-flow: column;
-        font-size: 16px;
-        font-family: FiraSansLight;
+        font-size: 18px;
+        &:hover {
+          font-size: 19px;
+        }
       }
       &__cut {
         display: block;
-        width: 100%;
-        height: 3%;
-        border-top: 46px solid transparent;
-        border-left: 280px solid rgb(73, 71, 73);
+        width: 85%;
+        height: 60%;
+        border-top: 23px solid transparent;
+        border-left: 282px solid rgb(73, 71, 73);
         position: relative;
-        top: 20px;
+        top: 43px;
         right: 24px;
       }
     }
+
     &__contact,
     &__skills-block,
     &__langueges {
@@ -120,7 +125,6 @@
     .contacts-section-link,
     .skills-name {
       color: $lightGray2;
-      font-family: FiraSansLight;
       font-size: 16px;
     }
     &__skills-block {
@@ -231,7 +235,6 @@
           width: 90%;
           height: max-content;
           text-align: justify;
-          font-family: FiraSansRegular;
           font-size: 18px;
           color: $gray;
           .logos {
@@ -255,12 +258,17 @@
       width: 90%;
       height: max-content;
       text-align: justify;
-      font-family: FiraSansRegular;
       font-size: 20px;
       color: $gray;
     }
   }
+  &:hover {
+    body {
+      background-color: lightgray;
+    }
+  }
 }
+
 .img-roud1,
 .img-roud2,
 .img-roud3 {
@@ -291,7 +299,6 @@
 }
 .header-name {
   display: block;
-  font-family: BreeSerif;
   color: $blue;
   font-size: 20px;
 }
@@ -386,21 +393,8 @@ a {
   }
 }
 .tech {
-  font-family: FiraSansRegular;
   font-size: 18px;
 }
 .desc {
-  font-family: FiraSansLight;
   font-size: 15.5px;
-}
-.my-education {
-  &__academy {
-    font-family: BreeSerif;
-  }
-  &__profession {
-    font-family: FiraSansRegular;
-  }
-  &__date {
-    font-family: FiraSansLight;
-  }
 }
